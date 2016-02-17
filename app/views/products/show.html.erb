@@ -1,0 +1,10 @@
+<h1>Product</h1>
+<%= link_to 'Back', products_path %>
+
+<p>product name: <%= @product.name %></p>
+<p>product description: <%= @product.description %></p>
+<p>product price: $<%= @product.formatted_price %></p>
+
+<%= render 'reviews/display_review' %>
+
+<%= render 'reviews/new_review' %>
